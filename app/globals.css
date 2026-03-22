@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  @apply m-0 bg-slate-100 text-slate-900 antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-medium;
+}
+
+.app-shell {
+  width: min(100%, 1800px);
+  margin-inline: auto;
+  padding: 16px;
+}
+
+@media (min-width: 640px) {
+  .app-shell {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .app-shell {
+    padding: 28px 32px;
+  }
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 1280px) {
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1.8fr) minmax(320px, 380px);
+    align-items: start;
+  }
+}
