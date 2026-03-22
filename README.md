@@ -32,6 +32,4 @@ npm run test
 ```
 
 ## Notes
-- No database is used because the assignment is upload-driven.
 - The Google Finance path is implemented through a backend request plus workbook fallback because Google Finance does not provide a stable public API.
-- No chart and no hard refresh button were added because they are not required in the assignment.
