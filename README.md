@@ -7,8 +7,6 @@ This project is a workbook-driven stock portfolio dashboard built for the assign
 - TypeScript
 - Tailwind CSS
 - xlsx for workbook parsing
-- zod for row validation
-- Vitest for unit tests
 
 ## Features
 - Upload workbook
